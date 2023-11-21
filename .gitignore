@@ -2,3 +2,6 @@ resources/corpora
 toy_deployment.egg-info
 __pycache__
 !.gitkeep
+inference-env
+*.egg-info
+*.code-workspace

@@ -1,7 +1,8 @@
 import json
 import requests
 
-test_api_url = "http://127.0.0.1:5001/"
+# test_api_url = "http://127.0.0.1:5001/"
+test_api_url = "http://webserver.io/api/v1/service/toy/"
 
 
 api_call_headers=None
