@@ -1,3 +1,26 @@
+# multipass
+```bash
+multipass launch minikube
+multipass info minikube
+multipass stop minikube
+multipass set local.minikube.memory=7G
+multipass set local.minikube.cpus=4
+multipass mount . minikube:/home/ubuntu/toy-manual-deployment
+multipass start minikube
+multipass shell minikube
+```
+
+# minikube
+```bash
+minikube stop
+minikube profile list
+minikube delete
+minikube start --memory=3000mb
+minikube profile list
+minikube status
+kubectl get deploy,svc,ingress -A
+```
+
 # conda env
 ```bash
 cd toy-manual-deployment/
@@ -18,6 +41,8 @@ curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.
 
 kubectl apply -f k8s/ingress-controller.yaml
 kubectl get deploy,svc,ingress -A
+kubectl logs deployment.apps/ingress-nginx-controller -n ingress-nginx
+kubectl get po -A
 kubectl get svc -n ingress-nginx
 minikube tunnel
 minikube service list (???)
