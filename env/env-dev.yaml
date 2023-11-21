@@ -1,0 +1,8 @@
+name: toy-dev
+dependencies:
+  - python=3.8.*
+  - pip
+
+  - pip:
+    - setuptools==68.0.0
+    - -e ../.

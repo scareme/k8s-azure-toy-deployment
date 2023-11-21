@@ -1,0 +1,6 @@
+conda env remove -n toy-dev
+conda env create -f env/env-dev.yaml
+conda activate toy-dev
+
+azmlinfsrv --entry_script src/score.py
+python src/test.py

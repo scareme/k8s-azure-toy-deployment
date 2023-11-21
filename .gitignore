@@ -1,0 +1,4 @@
+resources/corpora
+toy_deployment.egg-info
+__pycache__
+!.gitkeep

@@ -1,0 +1,2 @@
+azureml-inference-server-http==0.7.7
+nltk==3.8.1
