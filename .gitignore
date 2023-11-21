@@ -7,3 +7,4 @@ inference-env
 *.code-workspace
 .DS_Store
 resources/tokenizers
+toy-manual-deployment.code-workspace
