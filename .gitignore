@@ -5,3 +5,5 @@ __pycache__
 inference-env
 *.egg-info
 *.code-workspace
+.DS_Store
+resources/tokenizers
