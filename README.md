@@ -61,7 +61,8 @@ docker run --rm -p 5001:5001 toy-model
 minikube image load toy-model
 kubectl delete -k k8s/workload/
 kubectl apply -k k8s/workload/
-kubectl logs deployment.apps/deploy-toy-model -n nsp-toy-model 
+kubectl logs deployment.apps/deploy-toy-model -n nsp-toy-model
+kubectl get deploy,svc,ingress -A
 sudo bash -c "echo 10.110.131.113 webserver.io >> /etc/hosts"
 kubectl get deploy,svc,ingress -A
 minikube tunnel
